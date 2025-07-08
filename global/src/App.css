@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ffe4e1, #af0a8e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Container for Emoji Filter Section */
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+/* Homepage Hero Section */
+.home-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero {
+  margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #7e22ce;
+  animation: bounce 1.5s infinite;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+/* Emoji Preview Row */
+.emoji-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.emoji-preview span {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.emoji-preview span:hover {
+  transform: scale(1.25);
+}
+
+/* Category Section */
+.category-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.category-section h2 {
+  font-size: 1.5rem;
+  color: #1f2937;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 2rem;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  margin-bottom: 1.5rem;
+}
+
+.filter-buttons button {
+  background: #ff99cc;
+  border: none;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background: #ff66b2;
+}
+
+/* Emoji List */
+.emoji-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 2rem;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.emoji:hover {
+  transform: scale(1.2);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
